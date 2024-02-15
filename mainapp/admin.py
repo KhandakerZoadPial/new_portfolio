@@ -5,3 +5,5 @@ from .models import *
 
 admin.site.register(Project)
 admin.site.register(ClientReview)
+admin.site.register(Contact)
+admin.site.register(Resume)

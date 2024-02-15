@@ -18,3 +18,14 @@ class ClientReview(models.Model):
     client_country = models.TextField(blank=True)
     number_of_stars = models.FloatField(default=0.0)
     feedback = models.TextField(blank=True)
+
+
+class Contact(models.Model):
+    full_name = models.TextField(blank=True)
+    email = models.TextField(blank=True)
+    phone_number = models.TextField(blank=True)
+    message = models.TextField(blank=True)
+
+
+class Resume(models.Model):
+    the_file = models.FileField(upload_to='resumes')
